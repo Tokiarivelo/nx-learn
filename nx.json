@@ -1,6 +1,11 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "targetDefaults": {
+    "serve": {
+      "dependsOn": [
+        "build"
+      ]
+    },
     "build": {
       "dependsOn": [
         "^build"
@@ -15,5 +20,19 @@
     }
   },
   "defaultBase": "main",
-  "nxCloudId": "675845d5621150e32389d276"
+  "nxCloudId": "675845d5621150e32389d276",
+  "plugins": [
+    {
+      "plugin": "@nx/js/typescript",
+      "options": {
+        "typecheck": {
+          "targetName": "typecheck"
+        },
+        "build": {
+          "targetName": "build",
+          "configName": "tsconfig.lib.json"
+        }
+      }
+    }
+  ]
 }

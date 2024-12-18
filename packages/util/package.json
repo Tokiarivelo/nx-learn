@@ -1,6 +1,6 @@
 {
   "name": "@tuskdesign/util",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "dependencies": {
     "tslib": "^2.3.0"
   },
@@ -10,6 +10,7 @@
   "private": true,
   "nx": {
     "sourceRoot": "packages/util/src",
+    "projectType": "library",
     "name": "util"
   }
 }

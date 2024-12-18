@@ -1,4 +1,7 @@
 {
+  "release": {
+    "projects": ["packages/*"]
+  },
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "targetDefaults": {
     "serve": {

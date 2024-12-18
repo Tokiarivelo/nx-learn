@@ -28,6 +28,24 @@
       "plugin": "@nx/js/typescript",
       "options": {
         "typecheck": {
+          "targetName": "tsc:typecheck"
+        },
+        "build": {
+          "targetName": "tsc:build",
+          "configName": "tsconfig.lib.json"
+        }
+      },
+      "exclude": [
+        "packages/util/*"
+      ]
+    },
+    {
+      "plugin": "@nx/js/typescript",
+      "include": [
+        "packages/util/*"
+      ],
+      "options": {
+        "typecheck": {
           "targetName": "typecheck"
         },
         "build": {
@@ -36,5 +54,6 @@
         }
       }
     }
-  ]
+  ],
+  "nxCloudId": "675845e4621150e32389d278"
 }

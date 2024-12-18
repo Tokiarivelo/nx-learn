@@ -1,6 +1,8 @@
 {
   "release": {
-    "projects": ["packages/*"]
+    "projects": [
+      "packages/*"
+    ]
   },
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "targetDefaults": {

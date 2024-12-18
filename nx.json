@@ -23,7 +23,6 @@
     }
   },
   "defaultBase": "main",
-  "nxCloudId": "675845d5621150e32389d276",
   "plugins": [
     {
       "plugin": "@nx/js/typescript",
